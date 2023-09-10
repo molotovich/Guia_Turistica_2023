@@ -37,11 +37,45 @@
         android:background="@color/black"
         android:orientation="vertical">
 
-        <ListView
-            android:id="@+id/menuList"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"></ListView>
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/cercanos"
+                style="@style/Platform.MaterialComponents"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/lugares_cercanos" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/interes"
+                style="@style/Platform.MaterialComponents"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/lugares_de_inter_s" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/comercios"
+                style="@style/Platform.MaterialComponents"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/comercios_en_la_zona" />
+        </FrameLayout>
+
 
     </LinearLayout>
 
